@@ -1,0 +1,25 @@
+.product {
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap; 
+
+    @media (min-width: 768px) {
+        flex-wrap: unset;
+    }
+
+    &__text {
+        margin-left: 2em;
+
+        &__btn {
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            background-color: gray;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 1em;
+        }
+    }
+
+}
