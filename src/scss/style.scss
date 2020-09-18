@@ -3,6 +3,7 @@
 @import 'footer';
 @import 'coffee';
 @import 'menu';
+@import 'home';
 * {
     box-sizing: border-box;
 }
@@ -44,4 +45,5 @@ h3 {
 // Size of the google map
 #map {
     height: 30em;
+    margin-bottom: -5em;
 }
