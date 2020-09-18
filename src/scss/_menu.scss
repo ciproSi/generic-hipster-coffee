@@ -1,0 +1,60 @@
+.menu-offer {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        @media (min-width: 768px) {
+            justify-content: space-between;
+        }
+    }
+
+    //to make outer edges of menu columns aligned with page container while keeping the distance between the columns
+    @media (min-width: 768px) {
+        .menu-offer-col:nth-last-of-type(2n) {
+            padding-right: 1em;
+        }
+        .menu-offer-col:nth-last-of-type(2n+1) {
+            padding-left: 1em;
+        }
+        
+    }
+    h1,
+    h2 {
+        margin: 1em 0 0 0;
+    }
+    img {
+        width: 100%;
+        display: block;
+        margin: 2em auto -5em auto;
+    }
+}
+
+.menu-offer-col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 60%;
+    max-width: 410px;
+
+    @media (min-width: 768px) {
+        flex-basis: 40%;
+    }
+    
+    h2 {
+        margin: 1em 0 .5em 0;
+    }
+    h3 {
+        margin: 1em 0 .5em 0;
+    }
+
+    
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin: .2em 0;
+        }
+    }
+
+}
