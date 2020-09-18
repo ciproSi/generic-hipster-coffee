@@ -1,2 +1,17 @@
 @import 'variables';
+@import 'header';
 @import 'footer';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> menu
