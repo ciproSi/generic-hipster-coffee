@@ -1,0 +1,45 @@
+.header {
+    background-color: $bg-menu;
+    padding: .5em 0;
+
+    &__container {
+        
+        @media (min-width: 768px) {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }    
+    }
+
+    &__logo {
+        width: 7em;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            margin: 0 0 0 2em;
+        }
+    }
+    &__navlink {
+        display: flex;
+        justify-content: space-around;
+        padding: .5em 0 0 0;
+        a {
+            color: darkgrey;
+            display: inline-block;
+            font-weight: 300;
+            text-align: center;
+            text-decoration: none;
+            &:hover,
+            &:active {
+                font-weight: bold;
+            }
+            
+            @media (min-width: 768px) {
+                padding: 0 3em;
+            }
+        }
+    }
+
+}
