@@ -1,9 +1,13 @@
 .oh {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 30%;
 
-    &__h {
-        margin-right: 10rem;
+    @media (min-width: 768px) {
+        margin-right: 10em;
     }
+
 }
 
 .counter {
